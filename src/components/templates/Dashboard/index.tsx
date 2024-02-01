@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 import Navbar from './Navbar';
 import Sidenav from './Sidenav';
 import classNames from 'classnames';
+import Kit from '../Task/Kit';
 
 export const Dashboard = ({ children }: { children: ReactNode }) => {
   const [nav, setNav] = useState('hidden');
@@ -16,11 +17,16 @@ export const Dashboard = ({ children }: { children: ReactNode }) => {
     if (nav === 'visible') setNav('hidden');
   };
 
+  const handleModal = () => {};
+
   return (
     <div className={classNames(styles.dashboard)}>
       <Navbar nav={nav} handleNav={handleNav} />
       <Sidenav nav={nav} handleNav={handleClose} />
-      <div className={styles.container}>{children}</div>
+      <div className={styles.container}>
+        <Kit handleModal={handleModal} />
+        <div className={styles.section}>{children}</div>
+      </div>
     </div>
   );
 };

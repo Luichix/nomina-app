@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import { Table } from '@/components/molecules';
+import data from '@/../public/data/personal-dummies.json';
 
 const fecha = new Date();
 
@@ -30,61 +31,6 @@ const word = {
   FK_USER_ALTER: 'Modificador',
   FK_USER_LOW: 'Finalizador',
 };
-
-const data = [
-  {
-    ID_PERSONAL: '1',
-    Name: 'Luis',
-    Surname: 'Pérez',
-    IdentityCard: '081-250860-0008M',
-    TypeCard: 'Cedula',
-    PhoneNumber: '+505 8455-5589',
-    WorkArea: 'Administración',
-    Job: 'Administrador',
-    Salary: '28000',
-    FK_REGIMENT: 'General',
-    FK_WORKINGDAY: 'General',
-    TimeControl: 'No',
-    FK_CONTRACT: 'Permanente',
-    StartContract: fecha.toLocaleDateString(),
-    EndContract: fecha.toLocaleDateString(),
-    FK_PAYACCOUNT: 'ACH',
-    BankAccount: '11318848',
-    Status: 'Active',
-    AddedDate: fecha.toLocaleDateString(),
-    AlterDate: fecha.toLocaleDateString(),
-    LowDate: fecha.toLocaleDateString(),
-    FK_USER_ADD: 'Luichix',
-    FK_USER_ALTER: 'Luichix',
-    FK_USER_LOW: 'Luichix',
-  },
-  {
-    ID_PERSONAL: '2',
-    Name: 'Luis',
-    Surname: 'Pérez',
-    IdentityCard: '081-250860-0008M',
-    TypeCard: 'Cedula',
-    PhoneNumber: '+505 8455-5589',
-    WorkArea: 'Administración',
-    Job: 'Administrador',
-    Salary: '28000',
-    FK_REGIMENT: 'General',
-    FK_WORKINGDAY: 'General',
-    TimeControl: 'No',
-    FK_CONTRACT: 'Permanente',
-    StartContract: fecha.toLocaleDateString(),
-    EndContract: fecha.toLocaleDateString(),
-    FK_PAYACCOUNT: 'ACH',
-    BankAccount: '184351813',
-    Status: 'Active',
-    AddedDate: fecha.toLocaleDateString(),
-    AlterDate: fecha.toLocaleDateString(),
-    LowDate: fecha.toLocaleDateString(),
-    FK_USER_ADD: 'Luichix',
-    FK_USER_ALTER: 'Luichix',
-    FK_USER_LOW: 'Luichix',
-  },
-];
 
 const getHead = (data: Record<string, string>) => {
   const head = [];

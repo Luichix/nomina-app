@@ -1,21 +1,10 @@
 .kit {
   position: fixed;
   top: 60px;
-  left: 6rem;
-  width: auto;
-  max-width: 600px;
-  height: 40px;
+  left: 88px;
   z-index: 5;
-}
-
-.light {
   background-color: var(--color-base-white);
-  box-shadow: 0px 0px 3px #0004;
-}
-
-.dark {
-  background-color: var(--color-blue-gray-800);
-  box-shadow: 0px 0px 3px #fff6;
+  box-shadow: 2px 2px 2px #0002;
 }
 
 .tools {
@@ -23,67 +12,35 @@
   flex-direction: row;
   align-items: center;
   height: 100%;
-  padding: 0 1rem;
+  padding: 8px 16px;
+  gap: 4px;
 }
 
 .item {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
-  padding: 0.5rem;
+  align-items: center;
+  gap: 2px;
+  max-width: 100px;
+  padding: 4px;
   border-bottom: 3px solid transparent;
   cursor: pointer;
+  color: var(--color-font-base);
+  text-align: center;
+  font-size: 14px;
 }
 
 .item:hover {
-  background-color: var(--color-gray-100);
-  border-bottom: 3px solid var(--color-blue-gray-300);
+  color: var(--color-primary);
 }
 
 .line {
   margin: 0 0.5rem;
-  height: 60%;
-  border: 1px solid var(--color-gray-200);
+  height: 20px;
+  border: 1px solid var(--color-primary);
 }
 .icon {
-  font-size: var(--font-size-sm);
-}
-
-.colorGreen {
-  color: var(--color-green-600);
-}
-
-.colorBlue {
-  color: var(--color-blue-600);
-}
-
-.colorRed {
-  color: var(--color-red-600);
-}
-
-.colorYellow {
-  color: var(--color-orange-600);
-}
-
-.colorGray {
-  color: var(--color-gray-600);
-}
-
-.colorSky {
-  color: var(--color-sky-600);
-}
-
-.colorViolet {
-  color: var(--color-violet-600);
-}
-
-.colorPink {
-  color: var(--color-pink-600);
-}
-
-.colorEsmerald {
-  color: var(--color-esmerald-600);
-}
-
-.colorGray {
-  color: var(--color-gray-500);
+  font-size: var(--font-size-md);
+  color: var(--color-primary);
 }
