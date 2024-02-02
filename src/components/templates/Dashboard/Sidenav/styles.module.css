@@ -39,16 +39,16 @@
   align-items: center;
   padding: 8px 8px;
   border-left: 4px solid transparent;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
   box-sizing: border-box;
 }
 
 .group:hover,
 .group:active {
   border-left: 4px solid var(--color-secondary);
-  border-bottom: 2px solid var(--color-secondary);
+  /* border-bottom: 2px solid var(--color-secondary); */
   color: var(--color-secondary);
-  background-color: var(--color-base-white);
+  background-color: var(--color-base-gray);
 }
 .group:hover .item,
 .group:active .item {
@@ -75,7 +75,7 @@
 }
 
 .image {
-  filter: opacity(0.5);
+  filter: opacity(0.8);
 }
 
 .displayName {

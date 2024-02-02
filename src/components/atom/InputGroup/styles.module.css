@@ -2,6 +2,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
+  color: var(--color-font-base);
 }
 
 .label {
@@ -62,28 +63,13 @@
 }
 
 /** info */
-.null-dark {
-  color: var(--color-base-white);
+
+.error {
+  color: var(--color-alert-error);
 }
 
-.null-light {
-  color: var(--color-gray-500);
-}
-
-.error-light {
-  color: var(--color-red-500);
-}
-
-.success-light {
-  color: var(--color-green-600);
-}
-
-.error-dark {
-  color: var(--color-red-100);
-}
-
-.success-dark {
-  color: var(--color-green-100);
+.success {
+  color: var(--color-alert-sucess);
 }
 
 @media screen and (min-width: 600px) {

@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import classNames from 'classnames';
 
 interface ButtonProps extends PropsWithChildren {
-  onClick: () => void;
+  onClick?: () => void;
   info?: string;
   style?: string;
   size?: string;

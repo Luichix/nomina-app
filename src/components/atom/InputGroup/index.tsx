@@ -26,13 +26,12 @@ export function InputGroup({
   order = 'columned',
   position = 'outside',
   alert = true,
-  theme = 'light',
 }: InputGroupProps) {
   return (
     <div className={classNames(styles.inputGroup, styles[order])}>
       <label
         htmlFor={name}
-        className={classNames(styles.label, [styles[`${info}-${theme}`]])}
+        className={classNames(styles.label, [styles[`${info}}`]])}
       >
         {label}
       </label>

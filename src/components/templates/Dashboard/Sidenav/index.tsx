@@ -31,8 +31,8 @@ const Sidenav = ({
                 alt="cover"
                 className={styles.image}
                 src={userPicture}
-                height={45}
-                width={45}
+                height={32}
+                width={32}
               />
             </div>
             <div className={styles.link}>

@@ -24,7 +24,6 @@ export const Dashboard = ({ children }: { children: ReactNode }) => {
       <Navbar nav={nav} handleNav={handleNav} />
       <Sidenav nav={nav} handleNav={handleClose} />
       <div className={styles.container}>
-        <Kit handleModal={handleModal} />
         <div className={styles.section}>{children}</div>
       </div>
     </div>

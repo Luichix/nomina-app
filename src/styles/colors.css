@@ -72,12 +72,13 @@
   --color-base-white: #ffffff;
   --color-base-black: #000000;
   --color-base-transparent: transparent;
+  --color-base-gray: #e6effa;
 
-  --color-font-base: #0e1b29;
+  --color-font-base: #00142a;
 
-  --color-primary: #4687cc;
-  --color-secondary: #4846cc;
-  --color-tertiary: #46cacc;
+  --color-primary: #0062d0;
+  --color-secondary: #0600d0;
+  --color-tertiary: #00cad0;
 
   --color-alert-success: #268f47;
   --color-alert-error: #eb4e58;

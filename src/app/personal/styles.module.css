@@ -1,3 +1,27 @@
+.cinta {
+  display: flex;
+  padding: 2px;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-base-white);
+  padding: 6px 12px;
+  gap: 4px;
+  border-radius: 4px;
+}
+
+.item:hover {
+  background-color: var(--color-secondary);
+}
+
 .table {
   padding: 4rem 0;
   position: relative;
@@ -6,15 +30,15 @@
 
 .light > table {
   background-color: var(--color-base-white);
-  color: var(--color-gray-700);
+  color: var(--color-primary);
 }
 
 .light th {
-  background-color: var(--color-gray-100);
+  background-color: var(--color-base-white);
 }
 
 .dark > table {
-  background-color: var(--color-blue-gray-800);
+  background-color: var(--color-base-white);
   color: var(--color-base-white);
 }
 
